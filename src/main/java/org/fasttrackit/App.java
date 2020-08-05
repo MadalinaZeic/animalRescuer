@@ -1,12 +1,6 @@
 package org.fasttrackit;
 
-
-import sun.util.calendar.BaseCalendar;
-
-import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 
 public class App {
     public static void main(String[] args) {
@@ -48,7 +42,5 @@ public class App {
         game.adopter = human;
         game.dog = dog;
         game.veterinarian = person;
-
-
     }
 }
