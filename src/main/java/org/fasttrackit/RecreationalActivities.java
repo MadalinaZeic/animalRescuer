@@ -8,4 +8,8 @@ public class RecreationalActivities {
     boolean healthy = true;
 
     int funHoursPerDay = 3;
+
+    public RecreationalActivities (String name) {
+        this.name = name;
+    }
 }

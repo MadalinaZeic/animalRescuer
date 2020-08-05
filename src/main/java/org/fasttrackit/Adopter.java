@@ -12,4 +12,8 @@ public class Adopter {
     int kids = 3;
     int otherPets = 2;
 
+    public Adopter(String name, boolean ownsGarden) {
+        this.name = name;
+        this.ownsGarden = ownsGarden;
+    }
 }

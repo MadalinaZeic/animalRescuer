@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) {
-        Animal dog = new Animal();
-        Adopter human = new Adopter();
-        AnimalFood meat = new AnimalFood();
-        RecreationalActivities fetching = new RecreationalActivities();
-        Veterinarian person = new Veterinarian();
+        Animal dog = new Animal("Lulu");
+        Adopter human = new Adopter("John", false);
+        AnimalFood meat = new AnimalFood("Royal Canin");
+        RecreationalActivities fetching = new RecreationalActivities("fetching");
+        Veterinarian person = new Veterinarian("Molly");
         Game game = new Game();
 
         //Assigning valid values to dog

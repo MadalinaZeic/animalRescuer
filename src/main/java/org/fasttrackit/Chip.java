@@ -5,4 +5,8 @@ public class Chip {
 
     int duration;
     boolean isFree = true;
+
+    public Chip(String material) {
+        this.material = material;
+    }
 }

@@ -10,4 +10,7 @@ public class Veterinarian {
 
     int age = 37;
 
+    public Veterinarian(String name) {
+        this.name = name;
+    }
 }

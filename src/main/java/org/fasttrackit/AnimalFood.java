@@ -17,4 +17,8 @@ public class AnimalFood {
 
 
     LocalDate expirationDate;
+
+    public AnimalFood(String name) {
+        this.name = name;
+    }
 }
