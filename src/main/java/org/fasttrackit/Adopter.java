@@ -1,19 +1,75 @@
 package org.fasttrackit;
 
 public class Adopter {
-    String name;
-    String job;
+    private String name;
+    private String job;
 
-    boolean goodPerson = true;
-    boolean ownsGarden = false;
+    private boolean goodPerson = true;
+    private boolean ownsGarden = false;
 
-    double availableBudget;
+    private double availableBudget;
 
-    int kids = 3;
-    int otherPets = 2;
+    private int kids = 3;
+    private int otherPets = 2;
 
     public Adopter(String name, boolean ownsGarden) {
         this.name = name;
         this.ownsGarden = ownsGarden;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public boolean isGoodPerson() {
+        return goodPerson;
+    }
+
+    public void setGoodPerson(boolean goodPerson) {
+        this.goodPerson = goodPerson;
+    }
+
+    public boolean isOwnsGarden() {
+        return ownsGarden;
+    }
+
+    public void setOwnsGarden(boolean ownsGarden) {
+        this.ownsGarden = ownsGarden;
+    }
+
+    public double getAvailableBudget() {
+        return availableBudget;
+    }
+
+    public void setAvailableBudget(double availableBudget) {
+        this.availableBudget = availableBudget;
+    }
+
+    public int getKids() {
+        return kids;
+    }
+
+    public void setKids(int kids) {
+        this.kids = kids;
+    }
+
+    public int getOtherPets() {
+        return otherPets;
+    }
+
+    public void setOtherPets(int otherPets) {
+        this.otherPets = otherPets;
     }
 }
