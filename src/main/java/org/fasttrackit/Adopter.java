@@ -17,6 +17,18 @@ public class Adopter {
         this.ownsGarden = ownsGarden;
     }
 
+    public void feeding(Animal animal, AnimalFood animalFood) {
+
+        System.out.println (this.name + " is feeding " + animal.getName()+ " some " + animalFood.getName() + " food.");
+
+
+    }
+
+    public void playingWithAnimal (RecreationalActivities activity, Animal animal){
+
+        System.out.println(this.name + " is playing " + activity.getName() + " with " + animal.getName()+ ".");
+    }
+
     public String getName() {
         return name;
     }

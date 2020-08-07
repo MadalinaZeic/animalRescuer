@@ -7,13 +7,13 @@ public class App {
         Animal dog = new Animal("Lulu");
         Adopter human = new Adopter("John", false);
         AnimalFood meat = new AnimalFood("Royal Canin");
-        RecreationalActivities fetching = new RecreationalActivities("fetching");
+        RecreationalActivities fetching = new RecreationalActivities("fetch");
         Veterinarian person = new Veterinarian("Molly");
         Game game = new Game();
 
         //Assigning valid values to dog
         dog.setFavoriteFoodName("Chappy");
-        dog.setFavoriteRecreationalActivity("fetching");
+        dog.setFavoriteRecreationalActivity("fetch");
         dog.setName("Sassy");
         dog.setAge(3);
         dog.setHappinessLevel(10);
@@ -23,6 +23,8 @@ public class App {
         //Assigning valid values to Adopter
         human.setName("Cher");
         human.setAvailableBudget(300);
+        human.feeding(dog, meat);
+        human.playingWithAnimal(fetching, dog);
 
         //Assigning valid values to AnimalFood
         meat.setName("Chappy");
