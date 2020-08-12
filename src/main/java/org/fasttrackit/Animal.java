@@ -113,4 +113,8 @@ public class Animal {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    public void showHappiness(){
+        System.out.println(name + " is feeling playful.");
+    }
 }

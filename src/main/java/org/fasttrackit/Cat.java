@@ -23,4 +23,7 @@ public class Cat extends Animal{
     public void setEyeColor(String eyeColor) {
         this.eyeColor = eyeColor;
     }
+    public void showHappiness(){
+        System.out.println(getName() + " loves to purr.");
+    }
 }

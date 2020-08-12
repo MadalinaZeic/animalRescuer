@@ -15,4 +15,7 @@ public class Kittens extends Cat {
     public void setFurColor(String furColor) {
         this.furColor = furColor;
     }
+    public void showHappiness(){
+        System.out.println(getName() + " enjoys playing and running.");}
+
 }
