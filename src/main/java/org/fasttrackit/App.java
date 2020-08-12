@@ -10,8 +10,10 @@ public class App {
         RecreationalActivities fetching = new RecreationalActivities("fetch");
         Veterinarian person = new Veterinarian("Molly");
         Game game = new Game();
-        Cat cat = new Cat("Fluffy");
-        Kittens kittens = new Kittens("Kitty", "white");
+        //removed cause Polymorphism homework: Cat cat = new Cat("Fluffy");
+        Animal cat = new Cat("Fluffy");
+        //removed cause Polymorphism homework: Kittens kittens = new Kittens("Kitty", "white");
+        Animal kittens = new Kittens("Kitty", "white");
 
         //Assigning valid values to animal
         animal.setFavoriteFoodName("Chappy");
