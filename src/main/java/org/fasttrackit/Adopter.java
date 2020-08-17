@@ -19,14 +19,23 @@ public class Adopter {
 
     public void feeding(Animal animal, AnimalFood animalFood) {
 
-        System.out.println (this.name + " is feeding " + animal.getName()+ " some " + animalFood.getName() + " food.");
+        System.out.println(this.name + " is feeding " + animal.getName() + " some " + animalFood.getName() + " food.");
+        int hungerLevel = animal.getHungerLevel();
+        hungerLevel--;
+        animal.setHungerLevel(hungerLevel);
 
+        System.out.println(animal.getName() + "'s hunger level is at this point: " + animal.getHungerLevel());
 
     }
 
-    public void playingWithAnimal (RecreationalActivities activity, Animal animal){
+    public void playingWithAnimal(RecreationalActivities activity, Animal animal) {
 
-        System.out.println(this.name + " is playing " + activity.getName() + " with " + animal.getName()+ ".");
+        System.out.println(this.name + " is playing " + activity.getName() + " with " + animal.getName() + ".");
+        int happinessLevel = animal.getHappinessLevel();
+        happinessLevel++;
+        animal.setHappinessLevel(happinessLevel);
+
+        System.out.println(animal.getName() + "'s happiness level is at this point: " + animal.getHappinessLevel());
     }
 
     public String getName() {
