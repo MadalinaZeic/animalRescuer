@@ -26,6 +26,14 @@ public class Adopter {
 
         System.out.println(animal.getName() + "'s hunger level is at this point: " + animal.getHungerLevel());
 
+        //changed fav food name to trigger if condition below
+        animal.setFavoriteFoodName(animalFood.getName());
+
+        if (animalFood.getName().equals(animal.getFavoriteFoodName())) {
+            animal.setHappinessLevel(animal.getHappinessLevel() + 1);
+            System.out.println(animal.getName() + "'s happiness level is now: " + animal.getHappinessLevel());
+        }
+
     }
 
     public void playingWithAnimal(RecreationalActivities activity, Animal animal) {
@@ -36,6 +44,15 @@ public class Adopter {
         animal.setHappinessLevel(happinessLevel);
 
         System.out.println(animal.getName() + "'s happiness level is at this point: " + animal.getHappinessLevel());
+
+        int increment;
+        if (activity.getName().equals(animal.getFavoriteFoodName())) {
+            increment = 2;
+        } else {
+            increment = 1;
+        }
+        animal.setHappinessLevel(animal.getHappinessLevel() + increment);
+        System.out.println(animal.getName() + "'s happiness level is currently: " + animal.getHappinessLevel());
     }
 
     public String getName() {
