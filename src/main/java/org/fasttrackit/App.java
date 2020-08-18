@@ -4,12 +4,15 @@ import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) {
+
+        Game game = new Game();
+        game.start();
+        /*
         Animal animal = new Animal("Lulu");
         Adopter human = new Adopter("John", false);
         AnimalFood meat = new AnimalFood("Royal Canin");
         RecreationalActivities fetching = new RecreationalActivities("fetch");
         Veterinarian person = new Veterinarian("Molly");
-        Game game = new Game();
         //removed cause Polymorphism homework: Cat cat = new Cat("Fluffy");
         Animal cat = new Cat("Fluffy");
         //removed cause Polymorphism homework: Kittens kittens = new Kittens("Kitty", "white");
@@ -49,7 +52,6 @@ public class App {
         game.setDog(animal);
         game.setVeterinarian(person);
 
-        game.start();
 
         animal.showHappiness();
         cat.setName("Fluffy");
@@ -57,6 +59,7 @@ public class App {
 
         animal.showHappiness();
         kittens.showHappiness();
-    }
 
+         */
+    }
 }

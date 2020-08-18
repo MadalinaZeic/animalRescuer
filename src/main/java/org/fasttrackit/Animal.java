@@ -14,6 +14,7 @@ public class Animal {
     private boolean goodBoy = true;
     private double weight = 20.5;
 
+    public Animal (){}
     public Animal(String name) {
         this.name = name;
     }
