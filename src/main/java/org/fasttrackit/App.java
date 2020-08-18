@@ -49,6 +49,8 @@ public class App {
         game.setDog(animal);
         game.setVeterinarian(person);
 
+        game.start();
+
         animal.showHappiness();
         cat.setName("Fluffy");
         cat.showHappiness();
@@ -56,4 +58,5 @@ public class App {
         animal.showHappiness();
         kittens.showHappiness();
     }
+
 }
